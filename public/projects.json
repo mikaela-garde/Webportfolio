@@ -1,0 +1,39 @@
+[{
+    "title": "Uniquiz",
+    "description": "A React projects that is a music quiz where player compete against each other.",
+    "image": "./Images/UniquizImage.jpg",
+    "link": "uniquiz",
+    "imageFirst": true
+},
+{
+    "title": "Uniquiz2",
+    "description": "A React projects that is a music quiz where player compete against each other.",
+    "image": "./Images/UniquizImage.jpg",
+    "link": "uniquiz",
+    "imageFirst": false
+
+},
+{
+    "title": "Uniquiz3",
+    "description": "A React projects that is a music quiz where player compete against each other.",
+    "image": "./Images/UniquizImage.jpg",
+    "link": "uniquiz",
+    "imageFirst": true
+
+},
+{
+    "title": "Uniquiz3",
+    "description": "A React projects that is a music quiz where player compete against each other.",
+    "image": "./Images/UniquizImage.jpg",
+    "link": "uniquiz",
+    "imageFirst": true
+
+},
+{
+    "title": "Uniquiz3",
+    "description": "A React projects that is a music quiz where player compete against each other.",
+    "image": "./Images/UniquizImage.jpg",
+    "link": "uniquiz",
+    "imageFirst": true
+
+}]

@@ -1,0 +1,74 @@
+.projectPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width:95%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.projectText {
+    width:45%;
+    margin-left: 30px;
+}
+
+.projectText h3 {
+    font-size: 2.7vw;
+    margin-bottom: 40px;
+}
+
+.projectText p {
+    font-size: 1.1vw;
+    font-family: 'poppins';
+    font-weight: 300;
+}
+
+.projectImages {
+    width:55%;
+    padding-left: 20px;
+}
+
+.projectImages img{
+    width: 100%;
+
+
+}
+
+.projectText a {
+    color:#5c5689;
+}
+
+.projectText a:hover {
+    border-bottom: 2px #5c5689 solid;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .projectPage {
+        flex-direction: column;
+    }   
+    
+    .projectText {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .projectImages {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .contentProject {
+        margin-left: 0;
+    }
+
+    .projectText h3 {
+        font-size: 4.5vw;
+        margin-bottom: 10px;
+
+    }
+
+    .projectText p {
+        font-size: 2.2vw;
+    }
+}

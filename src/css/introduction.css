@@ -1,0 +1,142 @@
+.introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width:80%;
+}
+
+.text {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    padding-top: 100px;
+}
+
+.title {
+    z-index: 1;
+    opacity: 0;
+}
+
+.photo {
+    width:40%;
+    margin-top: 30px;
+    z-index: 0;
+    opacity: 0;
+}
+
+.photo img {
+    width: 100%;
+    display:block;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.353) 0px 50px 100px -20px, rgba(0, 0, 0, 0.386) 0px 30px 60px -30px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 5.5vw;
+    font-weight: 900;
+    background-color: #c9c5f1;
+    line-height: 1.5;
+    display: inline;
+    letter-spacing: 5px;
+}
+h1 span { 
+    background-color: #c9c5f1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.introduction p {
+    padding-top: 50px;
+    padding-right: 20px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.2vw;
+    width: 300px;
+    opacity: 0;
+}
+
+
+/* ------- ANIMATIONS -------------*/
+
+.photo {
+    -webkit-animation: tutsFade 4s 1s infinite linear alternate;
+    -moz-animation: tutsFade 4s 1s infinite linear alternate;
+    -ms-animation: tutsFade 4s 1s infinite linear alternate;
+    -o-animation: tutsFade 4s 1s infinite linear alternate;
+    animation: tutsFade 0.5s 0.5s 1 ease-out normal forwards;
+}
+
+@-webkit-keyframes tutsFade {}
+@-moz-keyframes tutsFade { /* your style */ }
+@-ms-keyframes tutsFade { /* your style */ }
+@-o-keyframes tutsFade { /* your style */ }
+@keyframes tutsFade {     
+    from {
+        transform: translate(0, 5%);
+    } to {
+        opacity: 1;
+        transform: translate(0, 0);
+  }
+}
+
+.title {
+    animation: slideToRight 1s 1s 1 ease-out normal forwards;
+}
+
+@keyframes slideToRight {     
+    from{
+        opacity:0;
+        transform: translate(0, 0);
+    } to {
+        opacity: 1;
+        transform: translate(10%, 0);
+  }
+}
+
+.introduction p {
+    animation: fadeIn 1s 1.5s 1 ease-out normal forwards;
+}
+
+@keyframes fadeIn {     
+    from{
+        opacity:0;
+    } to {
+        opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+    .photo {
+        visibility: hidden;
+        width: 0%;
+    }
+
+    .introduction {
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .text {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title {
+        animation: none;
+        opacity: 1;
+    }
+
+    .title h1 {
+        font-size: 8vw;
+    }
+
+    .introduction p{
+        padding-right: 0px;
+        font-size: 3vw;
+        width: 80%;
+    }
+
+}
