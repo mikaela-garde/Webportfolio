@@ -10,7 +10,7 @@ const ContactView= () =>
             <div className='contactNames'>
                 <ul>
                     <li key="email">Email</li>
-                    <li key="github">Github</li>
+                    <li key="github">GitHub</li>
                     <li key="linkedin">LinkedIn</li>
                 </ul> 
             </div>

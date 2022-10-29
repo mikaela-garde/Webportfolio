@@ -6,7 +6,7 @@ const IntroductionView= () =>
             <div className='title'>
                 <h1><span>Mikaela</span><br/><span>Gärde</span></h1>
             </div>
-            <p>A Media Technology student with an interest in web development, programming and interaction designs.</p>
+            <p>A Media Technology student with an interest in web development, programming and interaction design.</p>
         </div>
         
         <div className='photo'>
